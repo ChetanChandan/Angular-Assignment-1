@@ -1,0 +1,17 @@
+<h1>{{title}}</h1>
+
+<div>
+  <div>  
+    <input type="text" placeholder="enter first value" [(ngModel)]='firstVal'>  
+    <input type="text" [(ngModel)]='sign'>  
+    <input type="text" placeholder="enter second value" [(ngModel)]='secondVal'>  
+    <input type="text" placeholder="Result" [(ngModel)]='result'></div>
+<br/>
+<div>
+    <button id="btnAdd" (click)='addFunc()'>+</button>  
+    <button id="btnSubtract" style="margin-left: 10px;" (click)='subFunc()'>-</button> 
+    <button id="btnMultiplication" style="margin-left: 10px;" (click)='multFunc()'>*</button>  
+    <button id="btnDivide" style="margin-left: 10px;" (click)='divideFunc()'>/</button>  
+    <button id="btnReset" style="margin-left: 10px;" (click)="reset()">Reset</button>
+  </div>
+</div>
